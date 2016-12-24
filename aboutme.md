@@ -73,14 +73,14 @@
 - tcpdump - ✔
 - tr - ✔
 - cut - ✔
-- grep
-- awk
+- grep - ✔
+- awk - ✔
 - ip - ✔
-- sed
+- sed - ✔
 - netstat - ✔
 - wireshark
-- ansible
-- crond
+- ansible - ✔
+- crond - ✔
 - vim - ✔
 - nano - ✔
 - pv - ✔
@@ -118,14 +118,14 @@
 1. Марк Лутц. Изучаем Python. Подробный справочник - ✔
 2. Swaroop Chitlur. A Byte of Python - ✔
 3. Билл Любанович. Простой Python - ✔
-4. Денис Колисниченко. Командная строка Linux и автоматизация рутинных задач - ✔ 
+4. Денис Колисниченко. Командная строка Linux и автоматизация рутинных задач - ✔
+5. Mendel Cooper - Advanced Bash-Scripting Guide - ✔
 
 
 ##### К прочтению:
 1. Mendel Cooper. Advanced Bash-Scripting Guide
 2. Дэвид Тейнсли. Linux и UNIX: программирование в shell. Руководство разработчика
 3. Randal K. Michae. Mastering Unix Shell Scripting: Bash, Bourne, and Korn Shell Scripting for Programmers, System Administrators, and UNIX Gurus
-4.
 
 
 ### DNS-серверы
