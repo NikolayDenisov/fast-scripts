@@ -49,6 +49,8 @@
     * docker
     * Chef
     * Kafka
+    * Salt
+    * Spark
   * Raspberry Pi
     * pyserial - ✔
     * GPIO.RPi - ✔
