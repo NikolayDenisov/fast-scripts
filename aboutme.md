@@ -46,6 +46,9 @@
     * googlefinance
     * aiohttp
     * async
+    * docker
+    * Chef
+    * Kafka
   * Raspberry Pi
     * pyserial - ✔
     * GPIO.RPi - ✔
