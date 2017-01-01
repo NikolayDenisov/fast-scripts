@@ -153,11 +153,11 @@
  - tcp
  - udp
  
- ### Прочее
-    * async
-    * docker
-    * Chef
-    * Kafka
-    * Salt
-    * Spark
+### Прочее
+   * async
+   * docker
+   * Chef
+   * Kafka
+   * Salt
+   * Spark
  
