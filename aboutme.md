@@ -45,12 +45,7 @@
     * scipy
     * googlefinance
     * aiohttp
-    * async
-    * docker
-    * Chef
-    * Kafka
-    * Salt
-    * Spark
+    
   * Raspberry Pi
     * pyserial - ✔
     * GPIO.RPi - ✔
@@ -90,11 +85,15 @@
 - nano - ✔
 - pv - ✔
 - nmap - ✔
-
+- shred - ✔
+- sync - ✔
+- wipe - ✔
+- mcookie - ✔
+- m4 - ✔
+- dialog - ✔
 ### - Среды программирования
 - Atom - ✔
-- SublimeText3
-- PyCharm3
+- SublimeText3 - ✔
 
 ### - Системы контроля версий
 - Git (gitlab, github) - ✔
@@ -153,3 +152,12 @@
  - smtp
  - tcp
  - udp
+ 
+ ### Прочее
+    * async
+    * docker
+    * Chef
+    * Kafka
+    * Salt
+    * Spark
+ 
