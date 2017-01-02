@@ -110,6 +110,7 @@
 - Grafana - ✔
 - Kapacitor - ✔
 - Telegtaf - ✔
+- Chronograf - ✔
 
 ### Базы данных
 - InfluxDB - ✔
