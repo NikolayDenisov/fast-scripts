@@ -51,3 +51,18 @@ cat url-list.txt | xargs wget –c
 ```
 free | tr -s ' ' | sed '/^Память/!d' | cut -d" " -f2
 ```
+
+#### Перенаправление ввода/вывода
+
+- Создание нового пустого файла
+```
+: > filename
+```
+-  Перенаправление stdout и stderr в файл "filename"
+```
+&>filename
+```
+- Перенаправляется stderr на stdout
+```
+2>&1
+```
