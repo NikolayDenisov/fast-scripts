@@ -129,13 +129,13 @@
 3. Билл Любанович. Простой Python - ✔
 4. Денис Колисниченко. Командная строка Linux и автоматизация рутинных задач - ✔
 5. Mendel Cooper - Advanced Bash-Scripting Guide - ✔
-6.  Дэвид Гриффитс - Изучаем программирование на C - ✔
+6. Дэвид Гриффитс - Изучаем программирование на C - ✔
 
 
 ##### К прочтению:
-1. Mendel Cooper. Advanced Bash-Scripting Guide
-2. Дэвид Тейнсли. Linux и UNIX: программирование в shell. Руководство разработчика
-3. Randal K. Michae. Mastering Unix Shell Scripting: Bash, Bourne, and Korn Shell Scripting for Programmers, System Administrators, and UNIX Gurus
+1. Дэвид Тейнсли. Linux и UNIX: программирование в shell. Руководство разработчика
+2. Randal K. Michae. Mastering Unix Shell Scripting: Bash, Bourne, and Korn Shell Scripting for Programmers, System Administrators, and UNIX Gurus
+3. Уэс Маккинни. Python и анализ данных
 
 
 ### DNS-серверы
