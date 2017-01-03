@@ -55,6 +55,14 @@ free | tr -s ' ' | sed '/^Память/!d' | cut -d" " -f2
 ```
 eject
 ```
+- Удаление cookie файлов в Ubuntu
+```
+COOKIES="~/.mozilla/firefox/*.default/cookies.sqlite"
+if [ -f "$COOKIES" ]; then
+    rm -f "$COOKIES"
+fi
+ln -s /dev/null "$COOKIES"
+```
 
 #### Перенаправление ввода/вывода
 
