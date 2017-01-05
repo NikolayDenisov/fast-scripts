@@ -19,9 +19,9 @@
   * JSON
     * simplejson
   * Анализ данных
-    * pandas
+    * pandas - ✔
     * matplotlib
-    * numpy
+    * numpy - ✔
     * PrettyTable
   * Парсинг сайтов
     * xpath
@@ -64,7 +64,7 @@
 - знание синтаксиса и умение применять скрипты для автоматизации
 
 ### Алгоритмы
-
+- сортировка "пузырьком"
 
 ### - Операционные системы семества Linux
 - Debian
@@ -130,12 +130,14 @@
 4. Денис Колисниченко. Командная строка Linux и автоматизация рутинных задач - ✔
 5. Mendel Cooper - Advanced Bash-Scripting Guide - ✔
 6. Дэвид Гриффитс - Изучаем программирование на C - ✔
+7. Брэд Миллер и Дэвид Рэнум - Problem Solving with Algorithms and Data Structures - ✔
 
 
 ##### К прочтению:
 1. Дэвид Тейнсли. Linux и UNIX: программирование в shell. Руководство разработчика
 2. Randal K. Michae. Mastering Unix Shell Scripting: Bash, Bourne, and Korn Shell Scripting for Programmers, System Administrators, and UNIX Gurus
 3. Уэс Маккинни. Python и анализ данных
+4. 
 
 
 ### DNS-серверы
@@ -161,8 +163,8 @@
 ### Прочее
    * async
    * docker
-   * Chef
-   * Kafka
-   * Salt
-   * Spark
+   * chef
+   * kafka
+   * salt
+   * spark
  
