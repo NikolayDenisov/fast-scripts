@@ -28,3 +28,6 @@ https://repos.influxdata.com/
 ```
 cat /etc/*-release
 ```
+Смотри лучше тут:
+
+https://repos.influxdata.com/debian/pool/stable/i/influxdb/
