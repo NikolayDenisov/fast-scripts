@@ -131,6 +131,7 @@
 5. Mendel Cooper - Advanced Bash-Scripting Guide - ✔
 6. Дэвид Гриффитс - Изучаем программирование на C - ✔
 7. Брэд Миллер и Дэвид Рэнум - Problem Solving with Algorithms and Data Structures - ✔
+8. Ramesh Natarajan - Linux 101 Hacks - ✔
 
 
 ##### К прочтению:
