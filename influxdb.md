@@ -7,7 +7,7 @@ wget http://mirrordirector.raspbian.org/raspbian/pool/main/a/apt/apt-transport-h
 sudo dpkg -i apt-transport-https_1.0.9.8.4_armhf.deb
 ```
 
-2 Выполинть запрос
+2 Выполнить запрос
 
 ```
 curl -sL https://repos.influxdata.com/influxdb.key | sudo apt-key add - source /etc/os-release
