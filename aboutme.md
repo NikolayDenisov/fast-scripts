@@ -81,6 +81,8 @@
 - ip - ✔
 - sed - ✔
 - netstat - ✔
+- ethtool - ✔
+- dropwatch - ✔
 - wireshark
 - ansible - ✔
 - crond - ✔
@@ -132,7 +134,7 @@
 6. Дэвид Гриффитс - Изучаем программирование на C - ✔
 7. Брэд Миллер и Дэвид Рэнум - Problem Solving with Algorithms and Data Structures - ✔
 8. Ramesh Natarajan - Linux 101 Hacks - ✔
-
+9. Jamie Bainbridge and Jon Maxw - Red Hat Enterprise Linux Network Performance Tuning Guide - ✔
 
 ##### К прочтению:
 1. Дэвид Тейнсли. Linux и UNIX: программирование в shell. Руководство разработчика
