@@ -21,9 +21,9 @@ ethtool -G eth0 rx tx 2048
 
 #### Interrupts and Interrupt Handlers
 ```
-egrep “CPU0|eth0” /proc/interrupt
+egrep "CPU0|eth0" /proc/interrupts
 
-CPU0       CPU1       CPU2       CPU3
+              CPU0       CPU1       CPU2       CPU3
 ...
  45:          0          0          0          0   PCI-MSI-edge      eth0
  46:          0          0          0          0   PCI-MSI-edge      eth0-rx-0
