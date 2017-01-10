@@ -167,3 +167,36 @@ rx_over_errors: 399
 rx_fifo_errors: 399
 rx_missed_errors: 39
 ```
+
+- ошибки приема UDP
+```
+netstat -su
+IcmpMsg:
+    InType0: 218
+    InType3: 16704
+    InType5: 7
+    InType8: 2
+    OutType0: 2
+    OutType3: 3218
+    OutType8: 304
+Udp:
+    1067183 packets received
+    2981 packets to unknown port received.
+    18 packet receive errors
+    992424 packets sent
+    InCsumErrors: 18
+    IgnoredMulti: 1530260
+```
+
+- Использование нескольких потоков TCP. 
+Использование большего числа потоков TCP является более эффективным. Для просмотра потоков, которые использует приложение:
+```
+netstat -neopa
+```
+
+- Использование больших размеров TCP или UDP пакетов.
+Каждый сетевой пакет имеет overhead, такие как загаловки. Отправка данных в большими непрерывными блоками позволит снизить этот overhead.
+
+- Могут быть изменения работы драйвера сетевого интрефейса, после перехода на новое ядро версия Red Hat Enterprise Linux.
+
+#### Performance Tuning
