@@ -140,7 +140,8 @@
 1. Дэвид Тейнсли. Linux и UNIX: программирование в shell. Руководство разработчика
 2. Randal K. Michae. Mastering Unix Shell Scripting: Bash, Bourne, and Korn Shell Scripting for Programmers, System Administrators, and UNIX Gurus
 3. Уэс Маккинни. Python и анализ данных
-4. 
+4. Chris F.A. Johnson - Pro Bash Programming 
+5. Andrew Mallett - Mastering Linux Shell Scripting
 
 
 ### DNS-серверы
