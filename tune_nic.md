@@ -298,7 +298,7 @@ Pause parameters for eth3:
 Autonegotiate: off
 RX:            off
 TX:            off
-``
+```
 
   Для активации Flow Control:
   
@@ -328,6 +328,7 @@ rx-frames-irq: 0
 ```
 
 Следующая команда выключает адаптивный IC, и говорит адаптеру о прерывании ядра сразу после приема любого трафика:
+
 ```
 ethtool -C eth3 adaptive-rx off rx-usecs 0 rx-frames 0
 ```
