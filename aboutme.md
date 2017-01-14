@@ -142,6 +142,10 @@
 3. Уэс Маккинни. Python и анализ данных
 4. Chris F.A. Johnson - Pro Bash Programming 
 5. Andrew Mallett - Mastering Linux Shell Scripting
+6. Æleen Frisch - Essential System Administration: Tools and Techniques for Linux and Unix Administration
+7. James Turnbull - Pro Linux System Administration
+8. Bryan Costales - Unix Power Tools
+9. Carl Albing - bash Cookbook: Solutions and Examples for bash Users
 
 
 ### DNS-серверы
