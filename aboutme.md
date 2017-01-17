@@ -135,17 +135,17 @@
 7. Брэд Миллер и Дэвид Рэнум - Problem Solving with Algorithms and Data Structures - ✔
 8. Ramesh Natarajan - Linux 101 Hacks - ✔
 9. Jamie Bainbridge and Jon Maxw - Red Hat Enterprise Linux Network Performance Tuning Guide - ✔
+10. Andrew Mallett - Mastering Linux Shell Scripting - ✔
 
 ##### К прочтению:
 1. Дэвид Тейнсли. Linux и UNIX: программирование в shell. Руководство разработчика
 2. Randal K. Michae. Mastering Unix Shell Scripting: Bash, Bourne, and Korn Shell Scripting for Programmers, System Administrators, and UNIX Gurus
 3. Уэс Маккинни. Python и анализ данных
 4. Chris F.A. Johnson - Pro Bash Programming 
-5. Andrew Mallett - Mastering Linux Shell Scripting
-6. Æleen Frisch - Essential System Administration: Tools and Techniques for Linux and Unix Administration
-7. James Turnbull - Pro Linux System Administration
-8. Bryan Costales - Unix Power Tools
-9. Carl Albing - bash Cookbook: Solutions and Examples for bash Users
+5. Æleen Frisch - Essential System Administration: Tools and Techniques for Linux and Unix Administration
+6. James Turnbull - Pro Linux System Administration
+7. Bryan Costales - Unix Power Tools
+8. Carl Albing - bash Cookbook: Solutions and Examples for bash Users
 
 
 ### DNS-серверы
