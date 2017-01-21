@@ -4,8 +4,7 @@ set background=dark
 set tabstop=4
 set shiftwidth=4
 set smarttab
-"включим автозамену по умолчанию
-set et 
+set et — включим автозамену по умолчанию
 
 "Попросим Vim переносить длинные строки
 set wrap
@@ -58,17 +57,16 @@ set visualbell
 "необходимо установить для того, чтобы *.h файлам присваивался тип c, а не cpp
 let c_syntax_for_h="" 
 "Умные отступы (например, автоотступ после {)
-
 set smartindent 
 "Enable line numbers
 set number
 "Highlight current line
 set cursorline
 "Show “invisible” characters
-"set lcs=tab:▸\ ,trail:·,eol:¬,nbsp:_
+set lcs=tab:▸\ ,trail:·,eol:¬,nbsp:_
 "Show the current mode
 set showmode
 "Show the filename in the window titlebar
 set title
 "Show the (partial) command as it’s being typed
-set showcm
+set showcmd
