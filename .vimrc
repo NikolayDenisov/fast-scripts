@@ -4,7 +4,8 @@ set background=dark
 set tabstop=4
 set shiftwidth=4
 set smarttab
-set et — включим автозамену по умолчанию
+"включим автозамену по умолчанию
+set et 
 
 "Попросим Vim переносить длинные строки
 set wrap
@@ -64,7 +65,7 @@ set number
 "Highlight current line
 set cursorline
 "Show “invisible” characters
-set lcs=tab:▸\ ,trail:·,eol:¬,nbsp:_
+"set lcs=tab:▸\ ,trail:·,eol:¬,nbsp:_
 "Show the current mode
 set showmode
 "Show the filename in the window titlebar
