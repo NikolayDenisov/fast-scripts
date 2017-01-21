@@ -4,7 +4,7 @@ set background=dark
 set tabstop=4
 set shiftwidth=4
 set smarttab
-#включим автозамену по умолчанию
+"включим автозамену по умолчанию
 set et
 
 "Попросим Vim переносить длинные строки
