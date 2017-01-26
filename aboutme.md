@@ -14,6 +14,8 @@
     * fixtures
     * testtools
     * pytest-cov
+  * Отладка
+    * smiley
   * XML
     * sax/entree
   * JSON
@@ -21,8 +23,8 @@
   * Анализ данных
     * pandas - ✔
     * matplotlib
-    * numpy - ✔
-    * PrettyTable
+    * numpy
+    * PrettyTable - ✔
   * Парсинг сайтов
     * xpath
     * html
@@ -48,11 +50,10 @@
     * scipy
     * googlefinance
     * aiohttp
-    
+
   * Raspberry Pi
     * pyserial - ✔
     * GPIO.RPi - ✔
-
 
  - Практика
     * написание ботов для telegram - ✔
@@ -70,6 +71,7 @@
 - Debian
 - CentOS
 - Kali Linux
+- Ubuntu
 
 ### - Инструменты Linux
 - iptables - ✔
@@ -96,6 +98,8 @@
 - mcookie - ✔
 - m4 - ✔
 - dialog - ✔
+- tcprewrite - ✔
+- tcpreplay - ✔
 
 ### - Среды программирования
 - Atom - ✔
@@ -104,6 +108,9 @@
 ### - Системы контроля версий
 - Git (gitlab, github) - ✔
 - Subversion - ✔
+
+### - Тестирование
+- Gitlab CI
 
 ### Веб-фреймфорки
 - Flask
@@ -141,7 +148,7 @@
 1. Дэвид Тейнсли. Linux и UNIX: программирование в shell. Руководство разработчика
 2. Randal K. Michae. Mastering Unix Shell Scripting: Bash, Bourne, and Korn Shell Scripting for Programmers, System Administrators, and UNIX Gurus
 3. Уэс Маккинни. Python и анализ данных
-4. Chris F.A. Johnson - Pro Bash Programming 
+4. Chris F.A. Johnson - Pro Bash Programming
 5. Æleen Frisch - Essential System Administration: Tools and Techniques for Linux and Unix Administration
 6. James Turnbull - Pro Linux System Administration
 7. Bryan Costales - Unix Power Tools
@@ -167,7 +174,7 @@
  - smtp
  - tcp
  - udp
- 
+
 ### Прочее
    * async
    * docker
@@ -175,4 +182,3 @@
    * kafka
    * salt
    * spark
- 
