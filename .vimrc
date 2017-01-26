@@ -29,13 +29,13 @@ set linebreak
 "включает поддержку мыши при работе в терминале (без GUI)
 set mouse=a
 "скрывать мышь в режиме ввода текста
-set mousehide 
+set mousehide
 
 "показывать первую парную скобку после ввода второй
-set showmatch 
+set showmatch
 
 "использовать больше цветов в терминале
-set t_Co=256 
+set t_Co=256
 
 "использовать диалоги вместо сообщений об ошибках
 set confirm
@@ -45,10 +45,6 @@ autocmd! bufwritepost $MYVIMRC source $MYVIMRC
 
 "Проблема красного на красном при spellchecking-е решается такой строкой в .vimrc
 highlight SpellBad ctermfg=Black ctermbg=Red
-"при закрытии файла сохранить 'вид'
-au BufWinLeave *.* silent mkview
-"при открытии - восстановить сохранённый
-au BufWinEnter *.* silent loadview
 "backspace обрабатывает отступы, концы строк
 set backspace=indent,eol,start
 "не использовать своп-файл (в него скидываются открытые буферы)
@@ -56,9 +52,9 @@ set noswapfile
 "вместо писка бипером мигать курсором при ошибках ввода
 set visualbell
 "необходимо установить для того, чтобы *.h файлам присваивался тип c, а не cpp
-let c_syntax_for_h="" 
+let c_syntax_for_h=""
 "Умные отступы (например, автоотступ после {)
-set smartindent 
+set smartindent
 "Enable line numbers
 set number
 "Highlight current line
