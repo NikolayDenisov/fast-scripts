@@ -100,6 +100,11 @@
 - dialog - ✔
 - tcprewrite - ✔
 - tcpreplay - ✔
+- csplit
+- dmesg
+- env
+- paste
+
 
 ### - Среды программирования
 - Atom - ✔
