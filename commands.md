@@ -287,3 +287,65 @@ $_ Специальная переменная, содержит последн�
 $? Код возврата команды, функции или скрипта
 $$ PID самого процесса-сценария
 ```
+### Работа со строками
+
+В нижний регистр
+
+```
+$ string="A FEW WORDS"
+$ echo "${string,}"
+a FEW WORDS
+$ echo "${string,,}"
+a few words
+$ echo "${string,,[AEIUO]}"
+a FeW WoRDS
+```
+В верхний регистр
+```
+$ string="a few words"
+$ echo "${string^}"
+A few words
+$ echo "${string^^}"
+A FEW WORDS
+$ echo "${string^^[aeiou]}"
+A fEw wOrds
+
+$ string="A Few Words"
+$ declare -u string
+$ string=$string; echo "$string"
+A FEW WORDS
+```
+Переключить регистр
+```
+$ string="A Few Words"
+$ echo "${string~~}"
+a fEW wORDS
+$ string="A FEW WORDS"
+$ echo "${string~}"
+a fEW wORDS
+$ string="a few words"
+$ echo "${string~}"
+A Few Words
+```
+Capitalize
+
+```
+$ string="a few words"
+$ declare -c string
+$ string=$string
+$ echo "$string"
+A few words
+```
+Title
+```
+$ string="a few words"
+$ string=($string)
+$ string="${string[@]^}"
+$ echo "$string"
+A Few Words
+
+$ declare -c string
+$ string=(a few words)
+$ echo "${string[@]}"
+A Few Words
+```
