@@ -211,3 +211,11 @@
 return [int(sqrt(a)) if sqrt(a) % 1 == 0 else a ** 2 for a in arr]
 ```
 Возвратит список корней числа, если есть корни, если нет, вернет квадрат
+
+0. Заменить if/else и вернуть True или False 
+
+```
+def is_lucky(t):
+    try: return len(t)==6 and sum(map(int,t[:3]))==sum(map(int,t[-3:]))
+    except: return False
+```
