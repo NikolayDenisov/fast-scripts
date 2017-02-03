@@ -219,3 +219,9 @@ def is_lucky(t):
     try: return len(t)==6 and sum(map(int,t[:3]))==sum(map(int,t[-3:]))
     except: return False
 ```
+
+0. Преобразовать список чецлых чисел в одно число
+```
+map(int, str(n))
+```
+[1,3,2,5,3] -> 13253
