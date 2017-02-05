@@ -1,0 +1,11 @@
+### Библиотеки
+- math
+- os 
+- functool
+- itertools
+
+### Встроенные функции
+- map
+- zip
+- lambda
+- enumerate
