@@ -244,3 +244,10 @@ def rental_car_cost(d):
 def rental_car_cost(d):
   return d * 40 - (d > 2) * 20 - (d > 6) * 30
 ```
+
+0. Удалить символ из строки
+
+```
+x = 'abc'.split
+x['b'] -> ['a', 'c']
+```
