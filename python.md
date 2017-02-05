@@ -225,3 +225,22 @@ def is_lucky(t):
 map(int, str(n))
 ```
 [1,3,2,5,3] -> 13253
+
+0. Имеется переменная d, в зависиммости от d применить несколько условий.
+
+Можно решить задачу так:
+```
+def rental_car_cost(d):
+    # your code
+    if (d>=3 and d<7):
+        return d*40 - 20
+    elif (d>=7):
+        return d*40 -50
+    else:
+        return d*40
+```
+А лучше так:
+```
+def rental_car_cost(d):
+  return d * 40 - (d > 2) * 20 - (d > 6) * 30
+```
