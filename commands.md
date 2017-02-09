@@ -237,6 +237,14 @@ trap 'echo "Control-C disabled."' 2
 ```
 Конструкция `trap '' SIGNAL` (две одиночных кавычки) - запрещает SIGNAL для оставшейся части сценария. Конструкция `trap SIGNAL` - восстанавливает действие сигнала SIGNAL. Эти конструкции могут использоваться для защиты критических участков сценария от нежелательного прерывания.
 
+- Перенаправление stdout и stderr в разные файлы. 
+```
+printf '%s\n%v\n' OK? Oops! > FILE 2> ERRORFILE
+```
+- Добазапись в какой либо файл или файловый дескриптор
+```
+&>> FILE
+```
 ### Ошибки
 - Использование зарезервированных слов и служебных символов в качестве имен переменных.
 Имена переменных, начинающиеся с цифр, зарезервированы командной оболочкой.
@@ -349,3 +357,31 @@ $ string=(a few words)
 $ echo "${string[@]}"
 A Few Words
 ```
+
+### Создание простого отчета
+```
+#!/bin/bash
+#: Description : print formatted sales report
+## Build a long string of equals signs
+divider=====================================
+divider=$divider$divider
+ 
+## Format strings for printf
+header="\n %-10s %11s %8s %10s\n"
+format=" %-10s %11.2f %8d %10.2f\n"
+## Width of divider
+totalwidth=44
+ 
+## Print categories
+printf "$header" ITEM "PER UNIT" NUM TOTAL
+ 
+## Print divider to match width of report
+printf "%$totalwidth.${totalwidth}s\n" "$divider"
+ 
+## Print lines of report
+printf "$format" \
+Chair 79.95 4 319.8 \
+Table 209.99 1 209.99 \
+Armchair 315.49 2 630.98
+```
+    
