@@ -251,3 +251,29 @@ def rental_car_cost(d):
 x = 'abc'.split
 x['b'] -> ['a', 'c']
 ```
+
+0.  Есть строка цифр 123456789 (пусть я и правда не очень интересуюсь нулем), между которыми можно в любых местах поставить 4 арифметических операции (+, -, *, /) или не ставить ничего (то есть ставить пустую строку, тогда образуются двух- и более -значные числа) так, чтобы общее выражение давало в результате 100
+
+```
+#!/usr/bin/env python
+#-*- coding:utf-8 -*-
+
+from __future__ import division
+from itertools import product
+
+sum_num = 100
+count =  0
+
+digits = '123456789'
+signs = '', '+', '-', '*', '/'
+atoms = [map(lambda x: d + x, signs) for d in digits[:8]]
+
+for indexes in product(range(5), repeat=8):
+    expr = "".join( [ atoms[i][indexes[i]] for i in range(8) ] )
+    expr += '9'
+    if eval(expr) == sum_num:
+        print('{0} = {1}'.format(expr, sum_num))
+        count += 1
+ 
+print 'So, {0} expressions for {1}'.format(count, sum_num)
+```
