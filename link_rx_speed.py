@@ -20,7 +20,7 @@ def humanize_rate(raw_speed):
     return "{0:.2f} bits/s".format(raw_speed)
 
 if __name__ == "__main__":
-    while True:
+    for i in range(10):
         prev = getbites()
         time.sleep(1)
         cur = getbites()
