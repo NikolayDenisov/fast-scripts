@@ -13,7 +13,7 @@ def getbites():
 
 def humanize_rate(raw_speed):
     n = 2**10
-    if (raw_speed / n**2) >= n**2:
+    if (raw_speed / n**2) >= n:
         return "{0:.2f} Gbits/s".format(raw_speed / (n**3))
     elif (raw_speed / n) >= n:
         return "{0:.2f} Mbits/s".format(raw_speed / (n**2))
