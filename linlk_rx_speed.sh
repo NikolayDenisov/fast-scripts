@@ -4,7 +4,11 @@ set -eu
 
 iface="${1:-eth1}"
 stat="/sys/class/net/${iface}/statistics/rx_bytes"
-prev=$(<$stat)
+try:
+    prev=$(<$stat)
+except IOError as e:
+    print(e.errno)
+    print(e)
 while sleep 1; do
 	cur=$(<$stat)
 	echo "$cur $prev" | awk '{s=($1-$2)/1024;
