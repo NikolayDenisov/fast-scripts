@@ -6,10 +6,13 @@ import time
 
 def getbites():
     iface = "eth1" if len(sys.argv) < 2 else sys.argv[1]
-    with open('/sys/class/net/{0}/statistics/rx_bytes'.format(iface)) as rx:
-        rx_bytes = rx.read()
-    return float(rx_bytes) * 8
-
+    try:
+        with open('/sys/class/net/{0}/statistics/rx_bytes'.format(iface)) as rx:
+            rx_bytes = rx.read()
+        return float(rx_bytes) * 8
+    except IOError as e:
+        print e.errno
+        print e
 
 def humanize_rate(raw_speed):
     n = 2**10
