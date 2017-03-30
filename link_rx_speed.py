@@ -3,9 +3,9 @@
 import sys
 import time
 
+iface = "eth1" if len(sys.argv) < 2 else sys.argv[1]
 
 def getbites():
-    iface = "eth1" if len(sys.argv) < 2 else sys.argv[1]
     try:
         with open('/sys/class/net/{0}/statistics/rx_bytes'.format(iface)) as rx:
             rx_bytes = rx.read()
@@ -14,6 +14,15 @@ def getbites():
         print e.errno
         print e
 
+def getpackets():
+    try:
+        with open('/sys/class/net/{0}/statistics/rx_packets'.format(iface)) as rx:
+            rx_packets = rx.read()
+        return int(rx_packets)
+    except IOError as e:
+        print e.errno
+        print e
+    
 def humanize_rate(raw_speed):
     n = 2**10
     if (raw_speed / n**2) >= n:
@@ -26,7 +35,9 @@ def humanize_rate(raw_speed):
 
 if __name__ == "__main__":
     for i in range(10):
-        prev = getbites()
+        prev_bites = getbites()
+        prev_packest = getpackets() 
         time.sleep(1)
-        cur = getbites()
-        print humanize_rate(cur - prev)
+        cur_bites  = getbites()
+        cur_packest  = getpackets()
+        print humanize_rate(cur_bites - prev_bites), (cur_packest - prev_packest), "pkts/s"
