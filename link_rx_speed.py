@@ -3,7 +3,8 @@
 import sys
 import time
 import math
-millnames = ['pkts/s','tho_pkts/s','mil_pkts/s','bil_pkts/s','tri_pkts/s']
+
+MILLNAMES = ['pkts/s','tho_pkts/s','mil_pkts/s','bil_pkts/s','tri_pkts/s']
 
 iface = "eth1" if len(sys.argv) < 2 else sys.argv[1]
 
@@ -33,9 +34,9 @@ def humanize_rate(raw_speed):
 
 
 def millify(packets):
-    millidx = max(0,min(len(millnames)-1,
+    millidx = max(0,min(len(MILLNAMES)-1,
     int(math.floor(0 if packets == 0 else math.log10(abs(packets))/3))))
-    return '{0} {1}'.format(packets / 10**(3 * millidx), millnames[millidx])
+    return '{0} {1}'.format(packets / 10**(3 * millidx), MILLNAMES[millidx])
 
 
 if __name__ == "__main__":
