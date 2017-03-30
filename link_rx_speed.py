@@ -47,3 +47,4 @@ if __name__ == "__main__":
         cur_bites = reader("rx_bytes")
         cur_packets = reader("rx_packets")
         print humanize_rate(cur_bites - prev_bites), millify(cur_packets - prev_packets)
+        
