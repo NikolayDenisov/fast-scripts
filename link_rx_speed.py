@@ -4,7 +4,7 @@ import sys
 import time
 import math
 
-MILLNAMES = ['pkts/s','tho_pkts/s','mil_pkts/s','bil_pkts/s','tri_pkts/s']
+MILLNAMES = ['pps', 'kpps', 'mpps', 'gpps']
 
 iface = "eth1" if len(sys.argv) < 2 else sys.argv[1]
 
