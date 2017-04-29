@@ -1,0 +1,37 @@
+[*NIX]
+
+Centos, Debian на высоком уровне, свободное владение консолью
+
+- Скриптинг: Bash, Lua, Python
+
+- WEB: (Nginx, Tomcat, WildFly)
+
+- DB: (Redis, Memcached, MongoDB, PostgreSQL, MySQL)
+
+- ELK: (Elasticsearch, Filebeat, Metricbeat, Logstash, Kibana)
+
+- MQ (ActiveMQ, RabbitMQ)
+
+- SIP: (Kamailio, Freeswitch)
+
+- LDAP: (OpenDJ, OpenLDAP)
+
+- Backup: (Bareos, Bacula)
+
+- Monitoring: (Nagios, Icinga)
+
+- CI: (GitLab CI, Jenkins, NSIS)
+
+- Deploy: (Puppet, Chef, Ansible)
+
+[Network]
+
+- Управляемые коммутаторы 2-го 3-го уровня
+
+- E1, T1 маршрутизаторы
+
+[Virtualization]
+
+- VmWare ESXi
+
+- Docker

@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/python3.6
 
 import sys
 import time
@@ -11,13 +11,14 @@ iface = "eth1" if len(sys.argv) < 2 else sys.argv[1]
 
 def reader(param):
     try:
-        with open('/sys/class/net/{0}/statistics/{1}'.format(iface, param)) as rx:
-            data = rx.read()
+        stat = '/sys/class/net/{0}/statistics/{1}'.format(iface, param)
+        with open(stat) as rx_stat:
+            data = rx_stat.read()
         data = float(data) * 8 if param == "rx_bytes" else int(data)
         return data
-    except IOError as e:
-        print e.errno
-        print e
+    except IOError as read_error:
+        print(read_error.errno)
+        print(read_error)
 
 
 def humanize_rate(raw_speed):
@@ -32,10 +33,8 @@ def humanize_rate(raw_speed):
     return "{0:.2f} bits/s".format(raw_speed)
 
 
-
 def millify(packets):
-    millidx = max(0,min(len(MILLNAMES)-1,
-    int(math.floor(0 if packets == 0 else math.log10(abs(packets))/3))))
+    millidx = max(0, min(len(MILLNAMES) - 1, int(math.floor(0 if packets == 0 else math.log10(abs(packets)) / 3))))
     return '{0} {1}'.format(packets / 10**(3 * millidx), MILLNAMES[millidx])
 
 
@@ -46,5 +45,4 @@ if __name__ == "__main__":
         time.sleep(1)
         cur_bites = reader("rx_bytes")
         cur_packets = reader("rx_packets")
-        print humanize_rate(cur_bites - prev_bites), millify(cur_packets - prev_packets)
-        
+        print(humanize_rate(cur_bites - prev_bites), millify(cur_packets - prev_packets))
