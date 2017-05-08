@@ -1,4 +1,4 @@
-#!/usr/bin/python2.7
+#!/usr/bin/python2
 """script for analyze traffic on ifaces."""
 
 import sys
