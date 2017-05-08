@@ -47,8 +47,7 @@ def millify(packets):
 
 def get_up_interfaces():
     """Return all up interfaces."""
-    cmd = "ip -o link show | grep 'UP' | awk -F': ' '{print $2}' \
-                           | egrep '(eth|em|en|enp|bond|p[1-9]p)[0-9\.]+'"
+    cmd = "ip -o link show | grep 'UP' | awk -F': ' '{print $2}' | egrep '(eth|em|en|enp|bond|p[1-9]p)[0-9\.]+' | cut -d '@' -f 1"
     process = subprocess.Popen(
         [cmd], shell=True, stdout=subprocess.PIPE).communicate()[0]
     return [i for i in process.split('\n') if i is not '']
