@@ -17,7 +17,7 @@ def reader(param, iface):
         stat = '/sys/class/net/{0}/statistics/{1}'.format(iface, param)
         with open(stat) as rx_stat:
             data = rx_stat.read()
-        data = float(data) * 8 if param == "rx_bytes" else int(data)
+        data = int(data) if param == "rx_bytes" else int(data)
         return data
     except IOError as read_error:
         print(read_error)
